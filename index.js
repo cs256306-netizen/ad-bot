@@ -51,3 +51,8 @@ client.on('messageCreate', async m => {
 });
 
 client.login(process.env.DISCORD_TOKEN);
+
+const express = require('express');
+const app = express();
+app.get('/', (req, res) => res.send('OK'));
+app.listen(8080);
